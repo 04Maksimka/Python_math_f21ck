@@ -46,7 +46,7 @@ def probability_random_radius():
 
 def probability_random_center():
     """When we choose a center of a chord"""
-    pass  # TODO: to finish this function
+    pass
 
 
 if __name__ == '__main__':

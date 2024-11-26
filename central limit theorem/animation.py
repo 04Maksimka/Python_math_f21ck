@@ -8,7 +8,7 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 # Parameters
 population_size = 10000
 sample_size = 10
-num_samples = 500
+num_samples = 1000
 
 # Generate a population with a non-normal distribution (e.g., exponential, uniform) -- distribution of property
 population = np.random.uniform(0, 1, size=population_size)
@@ -34,7 +34,7 @@ def update(frame):
     ax.plot(x, y, color='red')
 
     # Set titles and labels
-    ax.set_title(f'Sample Means Distribution (Frame {frame})')
+    ax.set_title("Sampling from Uniform Distribution Approaching Normal Distribution")
     ax.set_xlabel('Sample Means')
     ax.set_ylabel('Density')
     ax.set_xlim(mu - 4 * sigma, mu + 4 * sigma)
@@ -43,6 +43,6 @@ def update(frame):
 
 # Create the animation
 ani = FuncAnimation(fig, update, frames=num_samples, repeat=False, interval=1)
-ani.save("CenLimTh.gif", dpi=300, writer=PillowWriter(fps=25))
+
 # Show the animation
-# plt.show()
+plt.show()
