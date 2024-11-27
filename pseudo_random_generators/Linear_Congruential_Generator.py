@@ -1,4 +1,6 @@
 from dataclasses import dataclass, field
+import matplotlib.pyplot as plt
+
 
 @dataclass
 class LCG:
@@ -22,6 +24,10 @@ class LCG:
 
 # Example usage
 if __name__ == "__main__":
-    lcg = LCG()  # Initialize with a seed
-    random_numbers = lcg.generate(10)  # Generate 10 pseudorandom numbers
-    print(random_numbers)
+    lcg_x = LCG()
+    lgc_y = LCG(seed=1234)
+    lgc_z = LCG(seed=1235)
+    x = lcg_x.generate(100)
+    y = lcg_x.generate(100)
+    plt.scatter(x, y)
+    plt.show()

@@ -44,10 +44,6 @@ def probability_random_radius():
 
     return positive / AMOUNT_OF_CHORDS
 
-def probability_random_center():
-    """When we choose a center of a chord"""
-    pass
-
 
 if __name__ == '__main__':
     print(probability_2_iid_angles_random_endpoints())
