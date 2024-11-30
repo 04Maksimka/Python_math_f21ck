@@ -27,6 +27,7 @@ def _check_for_same_elem(cls: list):
         flag = False
     return flag
 
+
 def plot_birth_paradox(end: int = 60):
     """
     Plot the graph
