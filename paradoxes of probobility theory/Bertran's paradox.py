@@ -1,6 +1,7 @@
 """Script with Bertran's paradox see more:
 https://en.wikipedia.org/wiki/Bertrand_paradox_(probability)"""
 import random
+
 import numpy as np
 
 AMOUNT_OF_CHORDS = 1000

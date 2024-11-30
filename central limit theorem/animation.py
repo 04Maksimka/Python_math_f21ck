@@ -1,9 +1,9 @@
 """Script that models such a statistical experiment: there's a country with population_size
  and you sample sample_size people on any property (height, iq etc) and we see that more we
  make such samples - than closer and closer we approach a normal distribution - and we stabilize."""
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation, PillowWriter
+import numpy as np
+from matplotlib.animation import FuncAnimation
 
 # Parameters
 population_size = 10000
@@ -16,6 +16,7 @@ population = np.random.uniform(0, 1, size=population_size)
 
 # Create a figure and axis for the animation
 fig, ax = plt.subplots(figsize=(10, 6))
+
 
 # Function to update the animation
 def update(frame):
@@ -51,6 +52,7 @@ def update(frame):
     ax.set_ylabel('Density')
     ax.set_xlim(mu - 4 * sigma, mu + 4 * sigma)
     ax.set_ylim(0, y.max() + 1)
+
 
 # Create the animation
 ani = FuncAnimation(

@@ -1,11 +1,12 @@
 from dataclasses import dataclass, field
+
 import matplotlib.pyplot as plt
 
 
 @dataclass
 class LCG:
     seed: int = 42
-    m: int = field(default=2**31 - 1, init=False)  # modulus
+    m: int = field(default=2 ** 31 - 1, init=False)  # modulus
     a: int = field(default=1103515245, init=False)  # multiplier
     c: int = field(default=12345, init=False)  # increment
     state: int = field(init=False)
@@ -21,6 +22,7 @@ class LCG:
     def generate(self, n: int) -> list:
         # Generate a list of n pseudorandom numbers
         return [self.next() for _ in range(n)]
+
 
 # Example usage
 if __name__ == "__main__":

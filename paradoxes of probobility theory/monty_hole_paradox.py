@@ -1,6 +1,7 @@
 """Script with Monti Hole paradox: https://en.wikipedia.org/wiki/Monty_Hall_problem"""
 import random
 
+
 # if we don't change ours chose
 def monti_hole_no_change(tries: int):
     """Outputs the probability if you don't switch a chose.

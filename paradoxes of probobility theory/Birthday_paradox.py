@@ -1,8 +1,8 @@
 """Script with Birthday paradox: https://en.wikipedia.org/wiki/Birthday_problem"""
 import random
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 def birthday_probability(class_size, amount_of_cls: int = 10000):
@@ -36,7 +36,7 @@ def plot_birth_paradox(end: int = 60):
     x = np.arange(1, end)
     y = np.array([birthday_probability(i) for i in x])
     plt.title('Birthday paradox')
-    plt.plot(x ,y)
+    plt.plot(x, y)
 
 
 if __name__ == '__main__':
