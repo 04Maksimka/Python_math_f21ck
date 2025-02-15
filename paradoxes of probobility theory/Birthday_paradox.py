@@ -40,7 +40,7 @@ def plot_birth_paradox(end: int = 60):
 
 
 if __name__ == '__main__':
-    print(birthday_probability(15))
+    print(birthday_probability(22))
     print(birthday_probability(23))
     print(birthday_probability(27))
     print(birthday_probability(100))

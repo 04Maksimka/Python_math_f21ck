@@ -28,8 +28,8 @@ class LCG:
 if __name__ == "__main__":
     lcg_x = LCG()
     lgc_y = LCG(seed=1234)
-    lgc_z = LCG(seed=1235)
-    x = lcg_x.generate(100)
-    y = lcg_x.generate(100)
+    lgc_z = LCG(seed=125)
+    x = lcg_x.generate(1000)
+    y = lcg_x.generate(1000)
     plt.scatter(x, y)
     plt.show()
